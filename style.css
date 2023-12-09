@@ -3,6 +3,8 @@ body {
   overflow: hidden;
 }
 
+
+
 .colline {
   background: rgb(3, 141, 28); /* Couleur de la colline */
   height: 200px;
@@ -73,8 +75,22 @@ body {
   margin-left: 975px;
   margin-top: 480px;
   animation: cacheballe 6s linear forwards;
+}
+
+.mur  {
+  background-image: url('mur.jpg');
+  background-size: 200px 200px;
+  height: 200px;
+  width: 200px;
+  position:absolute;
+  margin-left: 600px;
+  margin-top: 350px;
+  animation: mur 8s linear forwards;
 
 }
+
+
+
 @keyframes marche1 {
   15% {
     transform: translateX(0); 
@@ -150,4 +166,14 @@ body {
   }
 }
 
-
+@keyframes mur {
+  0% {
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
