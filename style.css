@@ -48,9 +48,9 @@ body {
   height: 200px;
   width: 300px;
   position: absolute;
-  margin-left: 400px;
+  margin-left: 300px;
   margin-top: 50px;
-  animation: cahce 4s linear forwards;
+  animation: imgcache 4s linear forwards;
 }
 
 .point {
@@ -59,34 +59,45 @@ body {
   height: 100px;
   width: 150px;
   position: absolute;
-  margin-left: 900px;
+  margin-left: 950px;
   margin-top: 300px;
-  animation: cahce 3s linear forwards;
+  animation: imgcache 3s linear forwards;
 }
 
+.ballefusil {
+  background-image: url('balle_fusil.png');
+  background-size: 50px 10px;
+  height: 10px;
+  width: 50px;
+  position: absolute;
+  margin-left: 975px;
+  margin-top: 480px;
+  animation: cacheballe 6s linear forwards;
+
+}
 @keyframes marche1 {
-  0% {
+  15% {
     transform: translateX(0); 
   }
-  15% {
+  25% {
     transform: translateX(50px) translateY(-30px);
   }
-  25% {
+  35% {
     transform: translateX(100px);
   }
-  35% {
+  45% {
     transform: translateX(150px) translateY(-30px);
   }
-  45% {
+  55% {
     transform: translateX(200px);
   }
-  55% {
+  65% {
     transform: translateX(250px) translateY(-30px);
   }
-  65% {
+  75% {
     transform: translateX(300px);
   }
-  75% {
+  85% {
     transform: translateX(350px) translateY(-30px);
   }
   100% {
@@ -103,14 +114,40 @@ body {
   }
 }
 
-@keyframes cahce {
+@keyframes imgcache {
   0% {
     opacity: 0; 
   }
-  99% {
+  80% {
     opacity: 0; 
   }
-  100% {
+  90% {
     opacity: 1; 
   }
+  100%{
+    opacity: 0;
+  }
 }
+
+@keyframes cacheballe {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  51%{
+    opacity: 1;
+  }
+  80%{
+    transform: translateX(0px);
+  }
+  95%{
+    opacity: 1; transform: translateX(-500px);
+  }
+  100%{
+    opacity: 0; transform: translateX(-500px);
+  }
+}
+
+
