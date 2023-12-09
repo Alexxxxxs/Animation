@@ -12,7 +12,7 @@ body {
   }
   
   .personnage {
-    background-image: url('personnage\ ftn.png');
+    background-image: url('personnage_ftn.png');
     background-size: contain;
     height: 200px;
     width: 120px;
