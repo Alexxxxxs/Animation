@@ -4,7 +4,7 @@ body {
   }
   
   .hill {
-    background: #8BC34A; /* Couleur de la colline */
+    background: rgb(3, 141, 28); /* Couleur de la colline */
     height: 200px;
     width: 100%;
     position: absolute;
