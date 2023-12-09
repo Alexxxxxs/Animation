@@ -11,16 +11,6 @@ body {
   bottom: 0;
 }
 
-.personnage {
-  background-image: url('personnage_ftn.png');
-  background-size: 122px;
-  height: 200px;
-  width: 120px;
-  position: absolute;
-  bottom: 200px; /* Position initiale au-dessus de la colline */
-  animation: marche 4s linear forwards ;
-}
-
 .terre {
   background-color: maroon;
   width: 100%;
@@ -29,22 +19,98 @@ body {
   bottom: 200px; /* Position de la terre au-dessus de la colline */
 }
 
+.personnage1 {
+  background-image: url('personnage_ftn.png');
+  background-size: 122px;
+  height: 200px;
+  width: 120px;
+  position: absolute;
+  bottom: 200px; /* Position initiale au-dessus de la colline */
+  animation: marche1 4s linear forwards ;
+}
 
-@keyframes marche {
+.personnage2 {
+  background-image: url('personnage_tire.jpg');
+  background-size: 300px 150px;
+  height: 150px;
+  width: 320px;
+  position: absolute;
+  bottom: 212px;
+  right: -350px;
+  animation: marche2 4s linear forwards;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.mecchoque {
+  background-image: url('choque.jpeg');
+  background-size: 300px 200px;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 50px;
+  animation: cahce 4s linear forwards;
+}
+
+.point {
+  background-image: url('point.png');
+  background-size: 150px 100px;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 300px;
+  animation: cahce 3s linear forwards;
+}
+
+@keyframes marche1 {
   0% {
-    transform: translateX(0);
+    transform: translateX(0); 
   }
-  25% {
+  15% {
     transform: translateX(50px) translateY(-30px);
   }
-  50% {
+  25% {
     transform: translateX(100px);
   }
-  75% {
+  35% {
     transform: translateX(150px) translateY(-30px);
   }
-  100% {
+  45% {
     transform: translateX(200px);
+  }
+  55% {
+    transform: translateX(250px) translateY(-30px);
+  }
+  65% {
+    transform: translateX(300px);
+  }
+  75% {
+    transform: translateX(350px) translateY(-30px);
+  }
+  100% {
+    transform: translateX(400px);
   }
 }
 
+@keyframes marche2 {
+  0% {
+    transform: translateX(300px); 
+  }
+  100% {
+    transform: translateX(-580px); 
+  }
+}
+
+@keyframes cahce {
+  0% {
+    opacity: 0; 
+  }
+  99% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
