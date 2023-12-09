@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .hill {
+    background: #8BC34A; /* Couleur de la colline */
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .character {
+    background-image: url('chemin/vers/ton-image-de-personnage.png');
+    background-size: contain;
+    height: 100px;
+    width: 60px;
+    position: absolute;
+    bottom: 200px; /* Position initiale au-dessus de la colline */
+    animation: marche 4s linear infinite;
+  }
+  
+  @keyframes marche {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(50px) translateY(-30px);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    75% {
+      transform: translateX(50px) translateY(-30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
