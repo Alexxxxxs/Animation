@@ -3,7 +3,7 @@ body {
     overflow: hidden;
   }
   
-  .hill {
+  .colline {
     background: rgb(3, 141, 28); /* Couleur de la colline */
     height: 200px;
     width: 100%;
@@ -11,14 +11,22 @@ body {
     bottom: 0;
   }
   
-  .character {
+  .personnage {
     background-image: url('personnage\ ftn.png');
     background-size: contain;
     height: 100px;
     width: 60px;
     position: absolute;
     bottom: 200px; /* Position initiale au-dessus de la colline */
-    animation: marche 4s linear infinite;
+    animation: marche 4s linear ;
+  }
+
+  .terre {
+    bottom: 200px;
+    color: maroon;
+    width: 100%;
+    height: 10px;
+
   }
   
   @keyframes marche {
