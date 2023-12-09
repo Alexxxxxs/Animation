@@ -29,27 +29,6 @@ body {
     bottom: 200px; /* Position de la terre au-dessus de la colline */
   }
   
-  .trait-container {
-    display: flex;
-  }
-  
-  .trait-incline1,
-  .trait-incline2 {
-    height: 2px; /* Ajuste l'épaisseur du trait selon tes besoins */
-    background-color: black; /* Couleur du trait */
-  }
-  
-  .trait-incline1 {
-    width: 50px; /* Ajuste la longueur de la première partie selon tes besoins */
-    transform: rotate(45deg); /* Inclinaison de la première partie */
-  }
-  
-  .trait-incline2 {
-    width: 50px; /* Ajuste la longueur de la deuxième partie selon tes besoins */
-    transform: rotate(-30deg); /* Inclinaison de la deuxième partie */
-    margin-left: -25px; /* Ajuste la marge pour que les deux traits se touchent */
-  }
-  
   
   @keyframes marche {
     0% {
@@ -69,3 +48,4 @@ body {
     }
   }
   
+ 
