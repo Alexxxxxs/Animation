@@ -1,1 +1,2 @@
-# Voici mon animation en CSS
+# Voici ma première animation en CSS
+# Signé : Alexandre DUBOIS 
