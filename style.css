@@ -1,6 +1,8 @@
 body {
   margin: 0;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .colline {
@@ -36,7 +38,7 @@ body {
   width: 320px;
   position: absolute;
   bottom: 212px;
-  right: -280px;
+  margin-left: 2000px;
   animation: marche2 2s linear forwards;
   animation-delay: 1s;
   
@@ -70,8 +72,8 @@ body {
   height: 8px;
   width: 45px;
   position: absolute;
-  margin-left: 1000px;
-  margin-top: 703px;
+  margin-left: 1005px;
+  margin-top: 706px;
   animation: cacheballe 7s linear forwards;
 }
 
@@ -140,10 +142,10 @@ body {
 
 @keyframes marche2 {
   0% {
-    transform: translateX(300px); 
+    transform: translateX(0px); 
   }
   100% {
-    transform: translateX(-900px); 
+    transform: translateX(-1020px); 
   }
 }
 
