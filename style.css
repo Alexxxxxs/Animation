@@ -51,7 +51,7 @@ body {
   width: 300px;
   position: relative;
   left: 350px;
-  top: 50px;
+  top: 300px;
   animation: imgcache 4s linear forwards;
 }
 
@@ -62,7 +62,7 @@ body {
   width: 150px;
   position: relative;
   left: 1010px;
-  top: 50px;
+  top: 200px;
   animation: imgcache 3s linear forwards;
 }
 
@@ -73,7 +73,7 @@ body {
   width: 45px;
   position: relative  ;
   left: 1005px;
-  top: 183px;
+  top: 406px;
   animation: cacheballe 7s linear forwards;
 }
 
@@ -84,7 +84,7 @@ body {
   width: 200px;
   position:relative;
   left: 615px;
-  top: 50px;
+  top: 270px;
   animation: mur 9s linear forwards;
 }
 
@@ -95,7 +95,7 @@ body {
   width: 50px;
   position: relative;
   left: 1200px;
-  bottom: 30px;
+  top: 200px;
   animation: grenade 20s linear forwards;
 }
 
@@ -106,7 +106,7 @@ body {
   width: 240px;
   position: relative;
   left: 350px;
-  bottom: 258px;
+  bottom: 40px;
   animation: explosion 18s linear forwards;
 }
 
